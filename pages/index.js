@@ -6,8 +6,9 @@ export default function Home() {
   const stl = "style";
   return (
     <>
-    <div className="md:h-screen bg-gray-900  font-bold ">
-      <NavBar />
+     <NavBar />
+    <div className="md:h-screen bg-gray-900  font-bold py-20 ">
+     
       {/* containt */}
       <div  className="container  md:flex  justify-center items-center mx-auto relative overflow-hidden h-max  md:h-full ">
         <div className=" flex justify-center  overflow-hidden md:px-14">
@@ -16,8 +17,7 @@ export default function Home() {
             </div>
 
             <div className="relative overflow-hidden  rounded-tl-lg rounded-br-lg  w-80 bg-green-100 border-t-6 border-indigo-200 border-t-indigo-500">
-            <Image  src={hero} alt="" className=" p-0 scale-125 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-150  duration-300" />
-           
+              <Image  src={hero} alt="" className=" p-0 scale-125 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-150  duration-300" />
             </div>
             <div className="relative h-full w-12  ">
                 <div className="absolute top-0 right-0 h-24 w-full bg-green-600/[.06] rounded-tr-lg"></div>

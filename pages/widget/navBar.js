@@ -2,7 +2,7 @@ const navBar = () =>{
 return(
    
       <div className="bg-black w-full fixed">
-        <div className="flex justify-between items-center px-20 mx-auto">
+        <div className="flex justify-between items-center md:px-20 mx-auto">
             <div className="bg-gray-700 text-gray-100 text-4xl p-2">
                 FK
             </div>
