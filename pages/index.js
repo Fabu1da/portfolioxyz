@@ -42,7 +42,7 @@ export default function Home() {
       
 <div className="bg-white flex flex-col p-8">
     <div className="text-center text-6xl font-bold my-8">Skills</div>
-    <div className="grid md:grid-cols-4 gap-6 w-2/3 mx-auto my-5">
+    <div className="grid grid-cols-2 w-full md:grid-cols-4 gap-6 md:w-2/3 mx-auto my-5">
         <div className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40">
           <div className="text-3xl font-bold">
             <i className="fa-solid fa-angle-left"></i>
