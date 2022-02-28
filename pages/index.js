@@ -87,7 +87,7 @@ export default function Home() {
 
       <div className="flex  justify-center my-5">
         <a className="flex justify-center items-center animate-bounce rounded-full bg-gray-900 text-white w-12 h-12 border">
-          <i className="fa-solid fa-angles-down"></i>
+          <i className="fa-solid fa-angles-down text-gray-100"></i>
         </a>
       </div>
 </div>

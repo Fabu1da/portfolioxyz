@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.under-title{
+    font-family: 'Thasadith', sans-serif;
+}
+.content-auto {
+content-visibility: auto;
+}
