@@ -44,7 +44,7 @@ export default function Home() {
     <div className="text-center text-6xl font-bold my-8">Skills</div>
     <div className="grid grid-cols-2 w-full gap-2 md:grid-cols-4 md:gap-6 md:w-2/3 mx-auto my-5">
         <div className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40">
-          <div className="text-3xl font-bold">
+          <div className="text-xl md:text-3xl font-bold">
             <i className="fa-solid fa-angle-left"></i>
               HTML5
             <i className="fa-solid fa-angle-right"></i>
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
         </div>
         <div className="flex flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl  h-40">
-          <div className="text-3xl font-bold">
+          <div className="text-xl md:text-3xl font-bold">
             CSS
           </div>
           <div className="mb-1 text-lg font-light text-sm dark:text-white">95%</div>
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl  h-40">
-          <div className="text-3xl font-bold">
+          <div className="text-xl md:text-3xl font-bold">
             JQuery
           </div>
 
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl  h-40">
-          <div className="text-3xl font-bold">
+          <div className="text-xl md:text-3xl font-bold">
             NextJs
           </div>
           <div className="mb-1 text-lg font-light text-sm dark:text-white">80%</div>
