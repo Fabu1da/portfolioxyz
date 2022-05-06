@@ -1,4 +1,5 @@
 import NavBar from "./widget/navBar";
+import Footer from "./widget/footer";
 import Image from "next/image";
 import hero from "../public/1.jpeg";
 const projects = [
@@ -155,6 +156,7 @@ export default function Home() {
           })}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
