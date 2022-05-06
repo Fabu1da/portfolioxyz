@@ -3,6 +3,7 @@ import Image from "next/image";
 import hero from "../public/1.jpeg";
 const projects = [
   {
+    id: 1,
     name: "Facebook clone",
     Description:
       "Facebook design and post with image and some other feature on this clone",
@@ -12,6 +13,7 @@ const projects = [
     gitHub: "Fabu1da",
   },
   {
+    id: 2,
     name: "Tinder clone",
     Description: "Dating app clone",
     image: "https://miro.medium.com/max/1200/1*N194HG_g0Awe40QYvXf6xw.jpeg",
@@ -19,6 +21,7 @@ const projects = [
     gitHub: "Fabu1da",
   },
   {
+    id: 2,
     name: "Simple Portfolio Design",
     Description: "simple portifolio, designed using Nextjs, TailwindCss",
     image:
@@ -129,7 +132,10 @@ export default function Home() {
 
           {projects.map((project) => {
             return (
-              <div className="relative rounded-md overflow-hidden shadow-2xl ">
+              <div
+                className="relative rounded-md overflow-hidden shadow-2xl "
+                key={project.id}
+              >
                 <div className=" h-40 overflow-hidden">
                   <img src={project.image} className="scale-125" />
                 </div>
