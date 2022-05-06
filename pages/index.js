@@ -136,7 +136,7 @@ export default function Home() {
                 className="relative rounded-md overflow-hidden shadow-2xl "
                 key={project.id}
               >
-                <div className=" h-40 overflow-hidden">
+                <div className=" md:h-40 overflow-hidden">
                   <img src={project.image} className="scale-125" />
                 </div>
                 <div className="">
