@@ -6,8 +6,9 @@ const Contact = () => {
       <div className="text-center text-6xl text-white font-bold my-8">
         Contact / Social Media
       </div>
-      <div className="flex justify-center gap-10 p-10">
-        <div className="p-10 shadow-xl rounded-2xl bg-slate-900 text-white">
+
+      <div className="grid grid-cols-2 w-full gap-2 md:grid-cols-2 md:gap-6 md:w-7/8 mx-auto my-5">
+        <div className="relative rounded-md overflow-hidden shadow-2xl p-10 text-white ">
           <h1 className=" text-xl text-white font-bold mb-5">
             Personal Contact
           </h1>
@@ -16,7 +17,8 @@ const Contact = () => {
             <span className="">fabiusyy@gmail.com</span>
           </div>
         </div>
-        <div className="p-10 border border-gray-600 rounded-2xl shadow-2xl text-white">
+
+        <div className="relative rounded-md overflow-hidden shadow-2xl p-10 text-white ">
           <h1 className=" text-xl text-white font-bold mb-5">Social Media</h1>
           <div className=" flex flex-col">
             <span>Facebook : Fabu1da</span>
