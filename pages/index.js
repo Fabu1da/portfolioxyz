@@ -1,7 +1,7 @@
 import NavBar from "./widget/navBar";
 import Footer from "./widget/footer";
 import Image from "next/image";
-import hero from "../public/1.jpeg";
+import hero from "../public/1.jpg";
 const projects = [
   {
     id: 1,
@@ -9,7 +9,7 @@ const projects = [
     Description:
       "Facebook design and post with image and some other feature on this clone",
     image:
-      "https://www.formget.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2018/08/isocial-facebook-clone-php-script.jpg.webp",
+      "https://user-images.githubusercontent.com/43209472/128313417-8fe0926f-4dbb-422b-96cc-ab15f0e0c300.png",
     date: "01/20/2022",
     gitHub: "Fabu1da",
   },
@@ -22,12 +22,22 @@ const projects = [
     gitHub: "Fabu1da",
   },
   {
-    id: 2,
+    id: 3,
     name: "Simple Portfolio Design",
     Description: "simple portifolio, designed using Nextjs, TailwindCss",
     image:
       "https://cms-assets.tutsplus.com/cdn-cgi/image/width=630/uploads/users/346/posts/32708/image/portfolio_template3.jpg",
     date: "01/20/2022",
+    gitHub: "Fabu1da",
+  },
+  {
+    id: 4,
+    name: "Simple Shoping cart design & Product list",
+    Description:
+      "Simple Shoping cart design & Product list, designed using ReactJs, TailwindCss",
+    image:
+      "https://media.licdn.com/dms/image/C4E22AQHehVtCjrq_hw/feedshare-shrink_2048_1536/0/1661805794745?e=1683158400&v=beta&t=hnDoNNJtpSIg0nC-OqI5IU0izYi8eEwCS1O5HO2q7eM",
+    date: "18/05/2022",
     gitHub: "Fabu1da",
   },
 ];
@@ -45,7 +55,7 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 h-36 w-full bg-blue-600/[.06] rounded-bl-lg"></div>
             </div>
 
-            <div className="relative overflow-hidden  rounded-tl-lg rounded-br-lg  w-80 bg-green-100 border-t-6 border-indigo-200 border-t-indigo-500">
+            <div className="relative overflow-hidden  rounded-tl-lg rounded-br-lg w-96  border-t-6 border-indigo-200 border-t-indigo-500">
               <Image
                 src={hero}
                 alt=""
@@ -64,9 +74,32 @@ export default function Home() {
             <div className="my-4 under-title text-gray-600 text-2xl text-italic">
               Frontend developer
             </div>
-            <div className="transition ease-in-out duration-500 delay-150 text-gray-400 font-light border-l-8 pl-3 border-gray-400 hover:border-l-8 pl-3 hover:border-blue-500 whitespace-normal">
+            <div className="transition ease-in-out duration-500 delay-150 text-gray-400 font-light border-l-8  border-gray-400 hover:border-l-8 pl-3 hover:border-blue-500 whitespace-normal">
               Front end developer who focuses on writing clean, elegant and
-              effective code. Love HTML, CSS, NextJs and JavaScripts
+              effective code. Love HTML, CSS, NextJs, ReactJs and JavaScripts
+            </div>
+            <div className="">
+              <div className="text-white mt-5">Main Technologies</div>
+              <div className="flex gap-3 mt-5">
+                <span className="border bg-slate-300 shadow-lg rounded-full px-5 py-2">
+                  React
+                </span>
+                <span className="border bg-slate-300 shadow-lg rounded-full px-5 py-2">
+                  HTML
+                </span>
+                <span className="border bg-slate-300 shadow-lg rounded-full px-5 py-2">
+                  CSS
+                </span>
+                <span className="border bg-slate-300 shadow-lg rounded-full px-5 py-2">
+                  JavaScript
+                </span>
+              </div>
+
+              <div>
+                <button className="px-5 py-3 border-gray-500 border rounded-full text-white mt-5 ">
+                  Contact Me
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -81,28 +114,38 @@ export default function Home() {
               HTML5
               <i className="fa-solid fa-angle-right"></i>
             </div>
-            <div className="mb-1 text-lg font-light text-sm dark:text-white">
-              98%
+            <div className="mb-1 text-lg font-light  dark:text-white">98%</div>
+            <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
+              <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
             </div>
+          </div>
+
+          <div className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40">
+            <div className="text-xl md:text-3xl font-bold">ReactJs</div>
+            <div className="mb-1 text-lg font-light  dark:text-white">98%</div>
+            <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
+              <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
+            </div>
+          </div>
+
+          <div className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40">
+            <div className="text-xl md:text-3xl font-bold">Django</div>
+            <div className="mb-1 text-lg font-light  dark:text-white">98%</div>
             <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
               <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
             </div>
           </div>
           <div className="flex flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl  h-40">
             <div className="text-xl md:text-3xl font-bold">CSS</div>
-            <div className="mb-1 text-lg font-light text-sm dark:text-white">
-              95%
-            </div>
+            <div className="mb-1 text-lg font-light  dark:text-white">95%</div>
             <div className="w-full  h-6 bg-gray-200 rounded-full dark:bg-gray-700">
               <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
             </div>
           </div>
           <div className="flex flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl  h-40">
-            <div className="text-xl md:text-3xl font-bold">JQuery</div>
+            <div className="text-xl md:text-3xl font-bold">JavaScript</div>
 
-            <div className="mb-1 text-lg font-light text-sm dark:text-white">
-              80%
-            </div>
+            <div className="mb-1 text-lg font-light  dark:text-white">80%</div>
             <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
               <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
             </div>
@@ -110,9 +153,7 @@ export default function Home() {
 
           <div className="flex flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl  h-40">
             <div className="text-xl md:text-3xl font-bold">NextJs</div>
-            <div className="mb-1 text-lg font-light text-sm dark:text-white">
-              80%
-            </div>
+            <div className="mb-1 text-lg font-light  dark:text-white">80%</div>
             <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
               <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
             </div>
