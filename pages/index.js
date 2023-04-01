@@ -144,7 +144,10 @@ export default function Home() {
         <div className="grid grid-cols-2 w-full gap-2 md:grid-cols-4 md:gap-6 md:w-2/3 mx-auto my-5">
           {Skills.map((skill) => {
             return (
-              <div className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40">
+              <div
+                key={skill.id}
+                className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40"
+              >
                 <div className="text-xl md:text-3xl font-bold">
                   {skill.name}
                 </div>
