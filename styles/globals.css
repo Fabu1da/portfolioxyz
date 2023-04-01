@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.under-title{
-    font-family: 'Thasadith', sans-serif;
+.under-title {
+  font-family: "Thasadith", sans-serif;
 }
 .content-auto {
-content-visibility: auto;
+  content-visibility: auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
