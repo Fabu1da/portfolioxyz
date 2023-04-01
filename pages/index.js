@@ -2,6 +2,7 @@ import NavBar from "./widget/navBar";
 import Footer from "./widget/footer";
 import Image from "next/image";
 import hero from "../public/1.jpg";
+import Contact from "./widget/contact";
 const projects = [
   {
     id: 1,
@@ -42,12 +43,45 @@ const projects = [
   },
 ];
 
+const Skills = [
+  {
+    id: 1,
+    name: "React Js",
+    rate: 90,
+  },
+  {
+    id: 2,
+    name: "HTML",
+    rate: 95,
+  },
+  {
+    id: 3,
+    name: "CSS",
+    rate: 90,
+  },
+  {
+    id: 4,
+    name: "JavaScript",
+    rate: 90,
+  },
+  {
+    id: 5,
+    name: "Django",
+    rate: 90,
+  },
+  {
+    id: 6,
+    name: "SQL",
+    rate: 90,
+  },
+];
+
 export default function Home() {
   const stl = "style";
   return (
     <>
       <NavBar />
-      <div className="md:h-screen bg-gray-900  font-bold py-20 ">
+      <div className="md:h-screen bg-gray-900  font-bold py-20 " id="home">
         {/* containt */}
         <div className="container  md:flex  justify-center items-center mx-auto relative overflow-hidden h-max  md:h-full ">
           <div className=" flex justify-center  overflow-hidden md:px-14">
@@ -67,7 +101,7 @@ export default function Home() {
             </div>
           </div>
           <div className=" p-8 md:w-1/2 ">
-            <h1 className="text-4xl md:text-6xl shadow-md text-white font-bold">
+            <h1 className="text-4xl md:text-6xl text-white font-bold">
               Fabien
               <span className="text-blue-600">Kavuganyi</span>
             </h1>
@@ -96,7 +130,7 @@ export default function Home() {
               </div>
 
               <div>
-                <button className="px-5 py-3 border-gray-500 border rounded-full text-white mt-5 ">
+                <button className="px-5 py-3 shadow-2xl border-gray-500 border rounded-full text-white mt-5 hover:bg-gray-800  duration-200">
                   Contact Me
                 </button>
               </div>
@@ -105,59 +139,24 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white flex flex-col p-8">
+      <div className="bg-white flex flex-col p-8" id="skills">
         <div className="text-center text-6xl font-bold my-8">Skills</div>
         <div className="grid grid-cols-2 w-full gap-2 md:grid-cols-4 md:gap-6 md:w-2/3 mx-auto my-5">
-          <div className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40">
-            <div className="text-xl md:text-3xl font-bold">
-              <i className="fa-solid fa-angle-left"></i>
-              HTML5
-              <i className="fa-solid fa-angle-right"></i>
-            </div>
-            <div className="mb-1 text-lg font-light  dark:text-white">98%</div>
-            <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
-              <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
-            </div>
-          </div>
-
-          <div className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40">
-            <div className="text-xl md:text-3xl font-bold">ReactJs</div>
-            <div className="mb-1 text-lg font-light  dark:text-white">98%</div>
-            <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
-              <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
-            </div>
-          </div>
-
-          <div className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40">
-            <div className="text-xl md:text-3xl font-bold">Django</div>
-            <div className="mb-1 text-lg font-light  dark:text-white">98%</div>
-            <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
-              <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
-            </div>
-          </div>
-          <div className="flex flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl  h-40">
-            <div className="text-xl md:text-3xl font-bold">CSS</div>
-            <div className="mb-1 text-lg font-light  dark:text-white">95%</div>
-            <div className="w-full  h-6 bg-gray-200 rounded-full dark:bg-gray-700">
-              <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
-            </div>
-          </div>
-          <div className="flex flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl  h-40">
-            <div className="text-xl md:text-3xl font-bold">JavaScript</div>
-
-            <div className="mb-1 text-lg font-light  dark:text-white">80%</div>
-            <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
-              <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
-            </div>
-          </div>
-
-          <div className="flex flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl  h-40">
-            <div className="text-xl md:text-3xl font-bold">NextJs</div>
-            <div className="mb-1 text-lg font-light  dark:text-white">80%</div>
-            <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
-              <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
-            </div>
-          </div>
+          {Skills.map((skill) => {
+            return (
+              <div className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40">
+                <div className="text-xl md:text-3xl font-bold">
+                  {skill.name}
+                </div>
+                <div className="mb-1 text-lg font-light  dark:text-white">
+                  {skill.rate} %
+                </div>
+                <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
+                  <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         <div className="flex  justify-center my-5">
@@ -167,7 +166,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-300 flex flex-col p-8">
+      <div className="bg-gray-300 flex flex-col p-8" id="projects">
         <div className="text-center text-6xl font-bold my-8">Projects</div>
         <div className="grid grid-cols-2 w-full gap-2 md:grid-cols-4 md:gap-6 md:w-7/8 mx-auto my-5">
           {/* <span className="text-2xl font-bold">Comming soom</span> */}
@@ -197,6 +196,7 @@ export default function Home() {
           })}
         </div>
       </div>
+      <Contact />
       <Footer />
     </>
   );
