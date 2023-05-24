@@ -112,29 +112,6 @@ export default function Home() {
               Front end developer who focuses on writing clean, elegant and
               effective code. Love HTML, CSS, NextJs, ReactJs and JavaScripts
             </div>
-            <div className="">
-              <div className="text-white mt-5">Main Technologies</div>
-              <div className="flex gap-3 mt-5">
-                <span className="border bg-slate-300 shadow-lg rounded-full px-5 py-2">
-                  React
-                </span>
-                <span className="border bg-slate-300 shadow-lg rounded-full px-5 py-2">
-                  HTML
-                </span>
-                <span className="border bg-slate-300 shadow-lg rounded-full px-5 py-2">
-                  CSS
-                </span>
-                <span className="border bg-slate-300 shadow-lg rounded-full px-5 py-2">
-                  JavaScript
-                </span>
-              </div>
-
-              <div>
-                <button className="px-5 py-3 shadow-2xl border-gray-500 border rounded-full text-white mt-5 hover:bg-gray-800  duration-200">
-                  Contact Me
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
