@@ -7,7 +7,7 @@ import {
   RiInstagramFill,
   RiLinkedinFill,
 } from "react-icons/ri";
-const navBar = () => {
+const NavBar = () => {
   const [smallScreenNav, setSmallScreenNav] = useState(false);
   const usehandleNavigation = () => {
     setSmallScreenNav((currentstate) => !currentstate);
@@ -85,4 +85,4 @@ const navBar = () => {
   );
 };
 
-export default navBar;
+export default NavBar;
