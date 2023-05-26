@@ -10,7 +10,7 @@ import {
 
 const Contact = () => {
   return (
-    <div className="bg-slate-800  p-20" id="contact">
+    <div className="bg-slate-800  md:p-20 p-5" id="contact">
       <div className="h-[5px] w-[60px] bg-orange-600  rounded-r-3xl" />
       <h1 className="headtext__base text-orange-600   my-3 text-semibold  text-[48px]">
         Contact
