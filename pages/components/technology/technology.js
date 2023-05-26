@@ -13,8 +13,8 @@ const Technology = () => {
         Technology
       </h1>
       <p className=" text-[20px] leading-10 text-white mt-5 mb-8">
-        I've worked with a range a technologies in the web development
-        world.From Back-end To Design
+        I have worked with a range a technologies in the web development world.
+        From Back-end To Design
       </p>
 
       <div className="flex flex-wrap md:flex-row flex-col gap-[30px]">
