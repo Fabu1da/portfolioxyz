@@ -32,7 +32,7 @@ const listProject = [
   },
 ];
 
-export const Project = () => {
+const Project = () => {
   const ProjectCard = ({
     project: { title, body, tags, img, url, codeurl },
   }) => {
@@ -77,3 +77,5 @@ export const Project = () => {
     </div>
   );
 };
+
+export default Project;
