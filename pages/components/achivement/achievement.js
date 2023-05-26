@@ -3,7 +3,7 @@ import { GoVerified } from "react-icons/go";
 import { HiAcademicCap } from "react-icons/hi";
 const Achievement = () => {
   return (
-    <div className="p-20 bg-black" id="achievement">
+    <div className="md:p-20 p-5 bg-black" id="achievement">
       <div className="h-[5px] w-[60px] bg-orange-600  rounded-r-3xl" />
       <h1 className="headtext__base text-orange-600   my-3 text-semibold  text-[48px]">
         Personal Achievements

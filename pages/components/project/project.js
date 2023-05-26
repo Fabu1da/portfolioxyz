@@ -67,10 +67,7 @@ const Project = () => {
     );
   };
   return (
-    <div
-      className=" flex md:flex-row flex-col flex-wrap h-max md:gap-5 "
-      style={{ padding: "0 5rem" }}
-    >
+    <div className=" flex md:flex-row flex-col flex-wrap h-max gap-5  md:p-20 p-5 ">
       {listProject.map((project, index) => (
         <ProjectCard key={index} project={project} />
       ))}

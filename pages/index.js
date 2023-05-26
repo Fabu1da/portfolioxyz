@@ -83,8 +83,8 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="ml-20 h-[5px] w-[60px] bg-orange-600 mt-20  rounded-r-3xl" />
-        <h1 className="headtext__base text-orange-600 ml-20 my-3 text-semibold  text-[48px]">
+        <div className="md:ml-20 ml-5 h-[5px] w-[60px] bg-orange-600 mt-20  rounded-r-3xl" />
+        <h1 className="headtext__base text-orange-600 md:ml-20 ml-5 my-3 text-semibold  text-[48px]">
           Project
         </h1>
 
