@@ -9,7 +9,7 @@ import {
 } from "react-icons/ri";
 const navBar = () => {
   const [smallScreenNav, setSmallScreenNav] = useState(false);
-  const handleNavigation = () => {
+  const usehandleNavigation = () => {
     setSmallScreenNav((currentstate) => !currentstate);
   };
   return (
@@ -53,9 +53,9 @@ const navBar = () => {
         </div>
         <div className="md:hidden text-gray-100 text-4xl mr-2">
           {smallScreenNav ? (
-            <RiCloseLine onClick={handleNavigation} />
+            <RiCloseLine onClick={usehandleNavigation} />
           ) : (
-            <RiMenu3Line onClick={handleNavigation} />
+            <RiMenu3Line onClick={usehandleNavigation} />
           )}
         </div>
       </div>
