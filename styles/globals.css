@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.under-title {
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+.under__title {
   font-family: "Thasadith", sans-serif;
 }
 .content-auto {
@@ -11,4 +13,53 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.headtext__base {
+  font-family: "Thasadith";
+  font-size: 34px;
+  font-weight: 800;
+}
+.bg__black {
+  background: black;
+}
+
+.tansition__black {
+  background: black;
+}
+
+.main__bg {
+  background: -moz-radial-gradient(
+    circle at 50% 50%,
+    hsl(204, 23.8%, 95.9%) 0%,
+    rgba(13, 0, 13, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 50% 50%,
+    rgba(20, 55, 133, 1) 0%,
+    rgba(13, 0, 13, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 50% 50%,
+    rgba(20, 55, 133, 1) 0%,
+    rgba(13, 0, 13, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 50% 50%,
+    rgba(20, 55, 133, 1) 0%,
+    rgba(13, 0, 13, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(20, 55, 133, 1) 0%,
+    rgba(13, 0, 13, 1) 100%
+  );
 }

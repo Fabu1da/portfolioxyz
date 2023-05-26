@@ -1,87 +1,41 @@
 import NavBar from "./widget/navBar";
-import Footer from "./widget/footer";
+import { jsPDF } from "jspdf";
+// import Footer from "./widget/footer";
+import { Project } from "./components/project/project";
+
 import Image from "next/image";
 import hero from "../public/1.jpg";
-import Contact from "./widget/contact";
-const projects = [
-  {
-    id: 1,
-    name: "Facebook clone",
-    Description:
-      "Facebook design and post with image and some other feature on this clone",
-    image:
-      "https://user-images.githubusercontent.com/43209472/128313417-8fe0926f-4dbb-422b-96cc-ab15f0e0c300.png",
-    date: "01/20/2022",
-    gitHub: "Fabu1da",
-  },
-  {
-    id: 2,
-    name: "Tinder clone",
-    Description: "Dating app clone",
-    image: "https://miro.medium.com/max/1200/1*N194HG_g0Awe40QYvXf6xw.jpeg",
-    date: "01/20/2022",
-    gitHub: "Fabu1da",
-  },
-  {
-    id: 3,
-    name: "Simple Portfolio Design",
-    Description: "simple portifolio, designed using Nextjs, TailwindCss",
-    image:
-      "https://cms-assets.tutsplus.com/cdn-cgi/image/width=630/uploads/users/346/posts/32708/image/portfolio_template3.jpg",
-    date: "01/20/2022",
-    gitHub: "Fabu1da",
-  },
-  {
-    id: 4,
-    name: "Simple Shoping cart design & Product list",
-    Description:
-      "Simple Shoping cart design & Product list, designed using ReactJs, TailwindCss",
-    image:
-      "https://media.licdn.com/dms/image/C4E22AQHehVtCjrq_hw/feedshare-shrink_2048_1536/0/1661805794745?e=1683158400&v=beta&t=hnDoNNJtpSIg0nC-OqI5IU0izYi8eEwCS1O5HO2q7eM",
-    date: "18/05/2022",
-    gitHub: "Fabu1da",
-  },
-];
 
-const Skills = [
-  {
-    id: 1,
-    name: "React Js",
-    rate: 90,
-  },
-  {
-    id: 2,
-    name: "HTML",
-    rate: 95,
-  },
-  {
-    id: 3,
-    name: "CSS",
-    rate: 90,
-  },
-  {
-    id: 4,
-    name: "JavaScript",
-    rate: 90,
-  },
-  {
-    id: 5,
-    name: "Django",
-    rate: 90,
-  },
-  {
-    id: 6,
-    name: "SQL",
-    rate: 90,
-  },
-];
+import Contact from "./widget/contact";
+import {
+  SiHtml5,
+  SiBootstrap,
+  SiCss3,
+  SiJavascript,
+  SiTailwindcss,
+  SiReact,
+  SiNextdotjs,
+} from "react-icons/si";
+import Technology from "./components/technology/technology";
+import About from "./components/aboutme/about";
+import Achievement from "./components/achivement/achievement";
+// const cv_url = "https://localhost:3000/pdf/Fabien_Kavuganyi_cv.pdf";
 
 export default function Home() {
-  const stl = "style";
+  const handleDownload = () => {
+    const filename = "Fabien_Kavuganyi_cv.pdf";
+    const a = document.createElement("a");
+    a.href =
+      "https://drive.google.com/file/d/1bt6uBVRtyi7K7q8t4FZbdo9Rp_LQvNJm/view?usp=share_link";
+    a.setAttribute("download", filename);
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  };
   return (
     <>
       <NavBar />
-      <div className="md:h-screen bg-gray-900  font-bold py-20 " id="home">
+      <div className="main__bg font-bold pt-28 pb-8  " id="home">
         {/* containt */}
         <div className="container  md:flex  justify-center items-center mx-auto relative overflow-hidden h-max  md:h-full ">
           <div className=" flex justify-center  overflow-hidden md:px-14">
@@ -102,82 +56,46 @@ export default function Home() {
           </div>
           <div className=" p-8 md:w-1/2 ">
             <h1 className="text-4xl md:text-6xl text-white font-bold">
-              Fabien
-              <span className="text-blue-600">Kavuganyi</span>
+              Fabien <span className="text-blue-600">Kavuganyi</span>
             </h1>
-            <div className="my-4 under-title text-gray-600 text-2xl text-italic">
+            <div className="my-4 under__title text-gray-200 text-2xl text-italic">
               Frontend developer
             </div>
-            <div className="transition ease-in-out duration-500 delay-150 text-gray-400 font-light border-l-8  border-gray-400 hover:border-l-8 pl-3 hover:border-blue-500 whitespace-normal">
+            <div className="transition ease-in-out duration-500 delay-150 text-white font-light border-l-8  border-gray-400 hover:border-l-8 pl-3 hover:border-blue-500 whitespace-normal">
               Front end developer who focuses on writing clean, elegant and
               effective code. Love HTML, CSS, NextJs, ReactJs and JavaScripts
             </div>
+
+            <p className="my-5 text-gray-200 under__title">Main Technology </p>
+            <div className="flex text-white flex-wrap flex-row  justify-start flex-1 gap-3 mb-10 ">
+              <SiHtml5 style={{ fontSize: "50px", color: "#f06529" }} />
+              <SiCss3 style={{ fontSize: "50px", color: "#800000" }} />
+              <SiJavascript style={{ fontSize: "50px", color: "#F0DB4F" }} />
+              <SiBootstrap style={{ fontSize: "50px", color: "#e040fb" }} />
+              <SiTailwindcss style={{ fontSize: "50px", color: "#e3342f" }} />
+              <SiReact style={{ fontSize: "50px", color: "#61dbfb" }} />
+              <SiNextdotjs style={{ fontSize: "50px", color: "#45ce05" }} />
+            </div>
+            <button
+              onClick={handleDownload}
+              className="border-2 border-orange-800 px-10 py-5 rounded-full text-orange-800 hover:text-white hover:bg-orange-800 mt-4 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
+            >
+              Get My CV here
+            </button>
           </div>
         </div>
+        <div className="ml-20 h-[5px] w-[60px] bg-orange-600 mt-20  rounded-r-3xl" />
+        <h1 className="headtext__base text-orange-600 ml-20 my-3 text-semibold  text-[48px]">
+          Project
+        </h1>
+
+        <Project />
       </div>
-
-      <div className="bg-white flex flex-col p-8" id="skills">
-        <div className="text-center text-6xl font-bold my-8">Skills</div>
-        <div className="grid grid-cols-2 w-full gap-2 md:grid-cols-4 md:gap-6 md:w-2/3 mx-auto my-5">
-          {Skills.map((skill) => {
-            return (
-              <div
-                key={skill.id}
-                className="flex  flex-col px-5 items-center  justify-center rounded-lg hover:shadow-lg shadow-2xl h-40"
-              >
-                <div className="text-xl md:text-3xl font-bold">
-                  {skill.name}
-                </div>
-                <div className="mb-1 text-lg font-light  dark:text-white">
-                  {skill.rate} %
-                </div>
-                <div className="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
-                  <div className="h-6 bg-gray-600 rounded-full dark:bg-gray-300"></div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="flex  justify-center my-5">
-          <a className="flex justify-center items-center animate-bounce rounded-full bg-gray-900 text-white w-12 h-12 border">
-            <i className="fa-solid fa-angles-down text-gray-100"></i>
-          </a>
-        </div>
-      </div>
-
-      <div className="bg-gray-300 flex flex-col p-8" id="projects">
-        <div className="text-center text-6xl font-bold my-8">Projects</div>
-        <div className="grid grid-cols-2 w-full gap-2 md:grid-cols-4 md:gap-6 md:w-7/8 mx-auto my-5">
-          {/* <span className="text-2xl font-bold">Comming soom</span> */}
-
-          {projects.map((project) => {
-            return (
-              <div
-                className="relative rounded-md overflow-hidden shadow-2xl "
-                key={project.id}
-              >
-                <div className=" md:h-40 overflow-hidden">
-                  <img src={project.image} className="scale-125" />
-                </div>
-                <div className="">
-                  <div className="px-2 text-amber-700 font-semibold text-lg">
-                    {project.name}
-                  </div>
-                  <div className="px-2 text-sm mb-12">
-                    {project.Description}
-                  </div>
-                  <div className="flex p-2 justify-center absolute bottom-0 w-full bg-green-900 text-white">
-                    GitHub : {project.gitHub}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <Technology />
+      <About />
+      <Achievement />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
