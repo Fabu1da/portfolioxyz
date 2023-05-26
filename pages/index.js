@@ -1,7 +1,6 @@
 import NavBar from "./widget/navBar";
-import { jsPDF } from "jspdf";
 // import Footer from "./widget/footer";
-import { Project } from "./components/project/project";
+import Project from "./components/project/project";
 
 import Image from "next/image";
 import hero from "../public/1.jpg";
