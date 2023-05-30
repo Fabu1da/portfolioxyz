@@ -25,7 +25,7 @@ export default function Home() {
     const filename = "Fabien_Kavuganyi_cv.pdf";
     const a = document.createElement("a");
     a.href =
-      "https://drive.google.com/file/d/1bt6uBVRtyi7K7q8t4FZbdo9Rp_LQvNJm/view?usp=share_link";
+      "https://drive.google.com/file/d/1lTguyb2nFA7sTgpjvLKg7hwTXx7g4m7I/view?usp=share_link";
     a.setAttribute("download", filename);
     document.body.appendChild(a);
     a.click();
