@@ -34,7 +34,7 @@ const About = () => {
           </div>
 
           <div className="md:flex-1  flex flex-col md:items-start items-center">
-            <div className="flex md:flex-row  w-full items-center  w-full flex-col">
+            <div className="flex md:flex-row  items-center  w-full flex-col">
               <span className="text-white flex-1 mr-4">
                 Apr, 2019 – Apr, 2020
               </span>{" "}
