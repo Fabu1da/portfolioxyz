@@ -4,6 +4,7 @@ import fig2 from "../../../public/fig2.png";
 import fig3 from "../../../public/fig3.png";
 import fig4 from "../../../public/fig4.png";
 import fig5 from "../../../public/fig5.png";
+import fig6 from "../../../public/fig6.png";
 import Image from "next/image";
 import styles from "./project.module.css";
 import {
@@ -12,6 +13,8 @@ import {
   RiArrowDropRightLine,
   RiArrowDropLeftLine,
 } from "react-icons/ri";
+
+// https://64e5fe9346a8560b7f016367--remarkable-buttercream-31f941.netlify.app/
 const listProject = [
   {
     title: "GPT AI application",
@@ -55,6 +58,15 @@ const listProject = [
     img: fig4,
     url: "https://monumental-bubblegum-94aff5.netlify.app/",
     codeurl: "https://github.com/Fabu1da/shopping-web.git",
+  },
+
+  {
+    title: "Money Exchange web app",
+    body: "Exchange currency app help user to exchange money from any currency to preferable currency, this is a simple app i made using reactjs and  vanilla css, i fetched data from exchangerate restapi. the app has chart to help with in tracking how the currency value compares to Euro",
+    tags: "ReactJs | Vanilla Css",
+    img: fig6,
+    url: "https://remarkable-buttercream-31f941.netlify.app/",
+    codeurl: "https://github.com/Fabu1da/exchange_app.git",
   },
 ];
 
