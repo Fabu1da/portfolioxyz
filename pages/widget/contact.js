@@ -44,7 +44,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center  ">
+        {/* <div className="flex justify-between items-center  ">
           <div className=" text-[23px] text-white">Social Media</div>
           <div className=" flex flex-row text-[23px]  text-white">
             <a href="https://www.instagram.com/fabu1da/">
@@ -60,7 +60,7 @@ const Contact = () => {
               <RiGithubFill />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
