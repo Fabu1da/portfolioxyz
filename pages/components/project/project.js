@@ -5,6 +5,7 @@ import fig3 from "../../../public/fig3.png";
 import fig4 from "../../../public/fig4.png";
 import fig5 from "../../../public/fig5.png";
 import fig6 from "../../../public/fig6.png";
+import fig7 from "../../../public/fig7.png";
 import Image from "next/image";
 import styles from "./project.module.css";
 import {
@@ -49,6 +50,14 @@ const listProject = [
     img: fig3,
     url: "https://master--tiny-pika-a4977a.netlify.app/",
     codeurl: "https://github.com/Fabu1da/bankapp",
+  },
+  {
+    title: "Django Rest API",
+    body: "complete REST API using Django. this is an ecommerce backend with full functionality, like product categories, login endpoint, product view endpoint, product create endpoint. it free anyone can use it for any purpose or upgrade it as he/she needs",
+    tags: "Python Django",
+    img: fig7,
+    url: "",
+    codeurl: "https://github.com/Fabu1da/backend.git",
   },
 
   {
@@ -102,13 +111,15 @@ const Project = () => {
             className=" bg-orange-600 py-1 px-3 rounded-2xl text-white flex flex-row items-center justify-center"
           >
             code <RiCodeFill />
-          </a>{" "}
-          <a
-            href={url}
-            className=" bg-orange-600 py-1 px-3 rounded-2xl text-white flex flex-row items-center justify-center"
-          >
-            Live preview <RiArrowRightUpLine />
-          </a>{" "}
+          </a>
+          {url && (
+            <a
+              href={url}
+              className=" bg-orange-600 py-1 px-3 rounded-2xl text-white flex flex-row items-center justify-center"
+            >
+              Live preview <RiArrowRightUpLine />
+            </a>
+          )}
         </div>
       </div>
     );
