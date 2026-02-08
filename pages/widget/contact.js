@@ -52,7 +52,7 @@ const Contact = () => {
             <h2 className="headtext__base text-4xl md:text-5xl">Get in Touch</h2>
           </div>
           <p className="subtext max-w-3xl">
-            I'm always interested in hearing about new projects and opportunities. 
+            I&rsquo;m always interested in hearing about new projects and opportunities. 
             Whether you want to collaborate, have a question, or just want to say hi – feel free to reach out!
           </p>
         </div>
@@ -91,11 +91,11 @@ const Contact = () => {
           {/* Left - Info */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-6">
-              Let's work together
+              Let&rsquo;s work together
             </h3>
             <p className="text-gray-400 mb-8 leading-relaxed">
-              I'm passionate about creating innovative solutions and collaborating with talented teams. 
-              If you have an exciting project or just want to discuss potential opportunities, I'd love to hear from you.
+              I&rsquo;m passionate about creating innovative solutions and collaborating with talented teams. 
+              If you have an exciting project or just want to discuss potential opportunities, I&rsquo;d love to hear from you.
             </p>
 
             {/* Quick Stats */}
@@ -123,7 +123,7 @@ const Contact = () => {
               </h4>
               <p className="text-gray-400 mb-6 leading-relaxed">
                 Send me an email or reach out through any of my social profiles. 
-                I'm excited to collaborate and bring your ideas to life.
+                I&rsquo;m excited to collaborate and bring your ideas to life.
               </p>
             </div>
 
