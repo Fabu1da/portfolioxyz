@@ -110,7 +110,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-2xl">✓</span>
-                <span className="text-gray-300">Based in Passau, Germany</span>
+                <span className="text-gray-300">Based in Landshut, Germany</span>
               </div>
             </div>
           </div>
