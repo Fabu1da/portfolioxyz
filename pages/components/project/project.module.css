@@ -1,25 +1,212 @@
-.project {
-  width: 92%;
-  margin: 20px auto;
-
-  display: flex;
-}
-
-.project__card {
+.projectsWrapper {
   position: relative;
-  min-width: 410px;
-  margin-right: 2rem;
+  width: 100%;
+  padding: 2rem 2rem 2rem 0;
+  margin: 0 auto;
 }
 
-.project__container {
+.navButtons {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
   display: flex;
-  flex-direction: row;
-  width: max-content;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  border-radius: 10px;
+  background: rgba(30, 41, 59, 0.5);
+  color: rgb(96, 165, 250);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navButton:hover {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgb(59, 130, 246);
+  color: rgb(147, 197, 253);
+  transform: translateY(-2px);
+}
+
+.projectContainer {
+  display: flex;
+  gap: 2rem;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.project__container::-webkit-scrollbar {
+.projectContainer::-webkit-scrollbar {
   display: none;
+}
+
+.projectCard {
+  flex: 0 0 380px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.6) 100%);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  height: 100%;
+}
+
+.projectCard:hover {
+  border-color: rgb(59, 130, 246);
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+  transform: translateY(-8px);
+}
+
+.projectImageContainer {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.projectOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .projectOverlay {
+  opacity: 1;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.projectButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, rgb(59, 130, 246) 0%, rgb(249, 115, 22) 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.projectButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.4);
+}
+
+.projectContent {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.projectDescription {
+  font-size: 0.95rem;
+  color: rgba(176, 190, 197, 0.8);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.projectTag {
+  padding: 0.4rem 0.8rem;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(249, 115, 22, 0.1));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: rgb(147, 197, 253);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.projectTag:hover {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(249, 115, 22, 0.2));
+  border-color: rgb(59, 130, 246);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projectsWrapper {
+    padding: 2rem 1rem 4rem 0;
+  }
+
+  .projectCard {
+    flex: 0 0 280px;
+  }
+
+  .projectContent {
+    padding: 1rem;
+  }
+
+  .projectTitle {
+    font-size: 1.1rem;
+  }
+
+  .projectDescription {
+    font-size: 0.85rem;
+  }
+
+  .navButtons {
+    bottom: -50px;
+  }
+
+  .navButton {
+    width: 40px;
+    height: 40px;
+  }
 }

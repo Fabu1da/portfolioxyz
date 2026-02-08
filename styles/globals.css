@@ -3,63 +3,145 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-.under__title {
-  font-family: "Thasadith", sans-serif;
-}
-.content-auto {
-  content-visibility: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: "Manrope", "Poppins", sans-serif;
+  background: #0f0f1e;
+  color: #e0e0e0;
+}
+
+/* Typography */
+.under__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .headtext__base {
-  font-family: "Thasadith";
-  font-size: 34px;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
   font-weight: 800;
-}
-.bg__black {
-  background: black;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #3b82f6 0%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.tansition__black {
-  background: black;
+.subtext {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #b0b0c3;
+}
+
+/* Background Styles */
+.bg__black {
+  background: #0f0f1e;
 }
 
 .main__bg {
-  background: -moz-radial-gradient(
-    circle at 50% 50%,
-    hsl(204, 23.8%, 95.9%) 0%,
-    rgba(13, 0, 13, 1) 100%
-  );
+  background: linear-gradient(135deg, rgba(15, 15, 30, 1) 0%, rgba(30, 41, 59, 0.3) 50%, rgba(15, 15, 30, 1) 100%);
+  position: relative;
+  overflow: hidden;
+}
 
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-radial-gradient(
-    circle at 50% 50%,
-    rgba(20, 55, 133, 1) 0%,
-    rgba(13, 0, 13, 1) 100%
-  );
+.main__bg::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
 
-  /* opera 11.10+ */
-  background: -o-radial-gradient(
-    circle at 50% 50%,
-    rgba(20, 55, 133, 1) 0%,
-    rgba(13, 0, 13, 1) 100%
-  );
+/* Animations */
+.animate-in {
+  animation: slideUp 0.8s ease-out forwards;
+}
 
-  /* ie 10+ */
-  background: -ms-radial-gradient(
-    circle at 50% 50%,
-    rgba(20, 55, 133, 1) 0%,
-    rgba(13, 0, 13, 1) 100%
-  );
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-in forwards;
+}
 
-  /* global 92%+ browsers support */
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(20, 55, 133, 1) 0%,
-    rgba(13, 0, 13, 1) 100%
-  );
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+  transform: translateY(-5px);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6 0%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-secondary {
+  background: linear-gradient(135deg, #f97316 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Buttons & Cards */
+.btn-primary {
+  @apply px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 border-2 border-blue-500 text-blue-400 rounded-lg font-semibold transition-all duration-300 hover:bg-blue-500 hover:text-white;
+}
+
+.card {
+  @apply bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-6 transition-all duration-300 hover:border-blue-500;
+}
+
+.card:hover {
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.2);
+}
+
+/* Badges */
+.badge {
+  @apply inline-block px-4 py-2 bg-gradient-to-r from-blue-500/10 to-orange-500/10 border border-blue-500/30 rounded-full text-sm font-semibold text-blue-400 backdrop-blur-sm transition-all duration-300;
+}
+
+.badge:hover {
+  @apply bg-gradient-to-r from-blue-500/20 to-orange-500/20 border-blue-500/60;
+}
+
+/* Divider */
+.divider-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+}
+
+/* Typography Colors */
+.text-primary {
+  @apply text-blue-400;
+}
+
+.text-accent {
+  @apply text-orange-400;
 }
