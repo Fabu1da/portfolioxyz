@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import hero from "../../../public/11.png";
 
 import {
   SiHtml5,
@@ -20,8 +18,8 @@ const Feature = ({ handleDownload }) => {
             <div className="absolute bottom-0 left-0 h-36 w-full bg-blue-600/[.06] rounded-bl-lg"></div>
           </div>
           <div className=" absolute bottom-0 overflow-hidden  flex aspect-square scale-[130%]  flex-col    items-center justify-center">
-            <Image
-              src={hero}
+            <img
+              src="/11.png"
               alt=""
               className="absolute bottom-0 brightness-75  hover:-translate-y-1 hover:scale-[110%] drop-shadow-2xl shadow-slate-300 duration-300 "
             />

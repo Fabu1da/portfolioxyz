@@ -1,7 +1,5 @@
 import NavBar from "./widget/navBar";
 import Project from "./components/project/project";
-import Image from "next/image";
-import hero from "../public/1.jpg";
 import Contact from "./widget/contact";
 import {
   SiReact,
@@ -41,10 +39,9 @@ export default function Home() {
               <div className="relative w-72 h-96 group">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-orange-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition duration-500"></div>
                 <div className="relative rounded-3xl overflow-hidden border-2 border-blue-500/30 hover-glow">
-                  <Image
-                    src={hero}
+                  <img
+                    src="/1.jpg"
                     alt="Fabien Kavuganyi"
-                    priority
                     className="w-full h-full object-cover hover:scale-110 transition duration-500"
                   />
                 </div>

@@ -1,13 +1,4 @@
 import React, { useRef } from "react";
-import fig1 from "../../../public/fig1.png";
-import fig2 from "../../../public/fig2.png";
-import fig3 from "../../../public/fig3.png";
-import fig4 from "../../../public/fig4.png";
-import fig5 from "../../../public/fig5.png";
-import fig6 from "../../../public/fig6.png";
-import fig7 from "../../../public/fig7.png";
-import fig8 from "../../../public/fig8.webp";
-import Image from "next/image";
 import styles from "./project.module.css";
 import { Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -16,7 +7,7 @@ const listProject = [
     title: "Harmonize: Data Harmonization System",
     body: "Comprehensive data harmonization framework using LLMs. Benchmarked with COMA, GPT-5, embeddings, clustering, and ensemble methods for schema matching across multiple datasets.",
     tags: ["Python", "LLM", "OpenAI API", "Machine Learning"],
-    img: fig8,
+    img: "/fig8.webp",
     url: "",
     codeurl: "https://github.com/Fabu1da/harmonize",
   },
@@ -24,7 +15,7 @@ const listProject = [
     title: "GPT AI Application",
     body: "AI-powered tool for testing prompts and exploring OpenAI's capabilities. Intuitive interface for prompt engineering without coding.",
     tags: ["React", "OpenAI API", "Responsive Design"],
-    img: fig2,
+    img: "/fig2.png",
     url: "https://master--bespoke-sprite-65ca51.netlify.app/",
     codeurl: "https://github.com/Fabu1da/gpt3_web",
   },
@@ -32,7 +23,7 @@ const listProject = [
     title: "Restaurant Management Platform",
     body: "Complete online restaurant platform with menu browsing, food ordering, and promotional newsletters. Modern UI with user-friendly navigation.",
     tags: ["React", "CSS", "E-commerce"],
-    img: fig1,
+    img: "/fig1.png",
     url: "https://646d317afb2eba0007921bf5--magenta-clafoutis-87a529.netlify.app/",
     codeurl: "https://github.com/Fabu1da/restaurentapp",
   },
@@ -40,7 +31,7 @@ const listProject = [
     title: "Movie Discovery App",
     body: "Search and discover movies with detailed descriptions. Features include recommendations and watchlist functionality powered by OMDB API.",
     tags: ["React", "OMDB API", "Modern UI"],
-    img: fig5,
+    img: "/fig5.png",
     url: "https://master--guileless-toffee-3dc976.netlify.app/",
     codeurl: "https://github.com/Fabu1da/movie_app.git",
   },
@@ -48,7 +39,7 @@ const listProject = [
     title: "Banking Application",
     body: "Modern fintech platform for account management, transfers, payments, and investments. Built with Next.js and Tailwind CSS for optimal performance.",
     tags: ["Next.js", "Tailwind CSS", "Finance"],
-    img: fig3,
+    img: "/fig3.png",
     url: "https://master--tiny-pika-a4977a.netlify.app/",
     codeurl: "https://github.com/Fabu1da/bankapp",
   },
@@ -56,7 +47,7 @@ const listProject = [
     title: "REST API Backend",
     body: "Production-ready e-commerce backend with comprehensive REST endpoints. Includes authentication, product management, and transaction handling.",
     tags: ["Django", "Python", "REST API"],
-    img: fig7,
+    img: "/fig7.png",
     url: "",
     codeurl: "https://github.com/Fabu1da/backend.git",
   },
@@ -64,7 +55,7 @@ const listProject = [
     title: "E-commerce Platform",
     body: "Full-featured e-commerce application with product categorization, shopping cart, and checkout functionality. Responsive and performant.",
     tags: ["React", "Tailwind CSS", "E-commerce"],
-    img: fig4,
+    img: "/fig4.png",
     url: "https://monumental-bubblegum-94aff5.netlify.app/",
     codeurl: "https://github.com/Fabu1da/shopping-web.git",
   },
@@ -72,7 +63,7 @@ const listProject = [
     title: "Currency Exchange Tool",
     body: "Real-time currency converter with visual charts for currency trend analysis. Integrates live exchange rates from market APIs.",
     tags: ["React", "API Integration", "Charts"],
-    img: fig6,
+    img: "/fig6.png",
     url: "https://remarkable-buttercream-31f941.netlify.app/",
     codeurl: "https://github.com/Fabu1da/exchange_app.git",
   },
@@ -94,11 +85,10 @@ const Project = () => {
     return (
       <div className={`${styles.projectCard} group`}>
         <div className={`${styles.projectImageContainer}`}>
-          <Image
+          <img
             src={img}
             alt={title}
             className={styles.projectImage}
-            quality={90}
           />
           <div className={styles.projectOverlay}>
             <div className={styles.projectLinks}>
