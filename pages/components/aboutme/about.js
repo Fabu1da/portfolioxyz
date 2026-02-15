@@ -54,7 +54,7 @@ const About = () => {
 
   const skills = [
     { category: "Frontend", items: ["React.js", "Next.js", "Tailwind CSS", "HTML5", "CSS3"] },
-    { category: "Backend", items: ["Node.js", "Express", "REST APIs", "MySQL"] },
+    { category: "Backend", items: ["Node.js", "Express", "REST APIs", "MySQL", "MongoDB"] },
     { category: "Cloud & DevOps", items: ["Microsoft Azure", "Nginx", "CI/CD", "Netlify"] },
     { category: "Tools", items: ["Git", "Figma", "Power BI", "VS Code"] },
   ];

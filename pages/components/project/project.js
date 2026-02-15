@@ -4,6 +4,14 @@ import { Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 
 const listProject = [
   {
+    title: "AI-Powered Agent",
+    body: "A modern real-time chat application powered by OpenAI's GPT-4o-mini API. Built with React 19 and TypeScript, featuring a sleek dark neon UI, persistent chat history with localStorage, and full mobile responsiveness. Demonstrates API integration, state management with React hooks, error handling, and professional UX design. Users can chat with an intelligent AI assistant, copy responses, and maintain conversation history across sessions.",
+    tags: ["TypeScript", "React", "OpenAI API", "LLM", "Tailwind CSS", "Vite"],
+    img: "/fig9.png",
+    url: "https://aiagentf.netlify.app/",
+    codeurl: "https://github.com/Fabu1da/AIagents.git",
+  },
+  {
     title: "Harmonize: Data Harmonization System",
     body: "Comprehensive data harmonization framework using LLMs. Benchmarked with COMA, GPT-5, embeddings, clustering, and ensemble methods for schema matching across multiple datasets.",
     tags: ["Python", "LLM", "OpenAI API", "Machine Learning"],
