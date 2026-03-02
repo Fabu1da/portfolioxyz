@@ -114,7 +114,7 @@ const Achievement = () => {
               <p className="text-gray-400">Years of Experience</p>
             </div>
             <div className="text-center border-l border-r border-slate-700">
-              <p className="text-3xl font-bold gradient-text mb-2">7+</p>
+              <p className="text-3xl font-bold gradient-text mb-2">10+</p>
               <p className="text-gray-400">Projects Completed</p>
             </div>
             <div className="text-center">
