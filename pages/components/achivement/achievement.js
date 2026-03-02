@@ -15,7 +15,7 @@ const Achievement = () => {
     {
       Icon: Briefcase,
       type: "Experience",
-      title: "3+ Years Professional Experience",
+      title: "5+ Years Professional Experience",
       subtitle: "Full-Stack Developer",
       year: "2020-2023",
       color: "from-green-500 to-emerald-500",
@@ -110,7 +110,7 @@ const Achievement = () => {
         <div className="card border-t-2 border-t-blue-500/50">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <p className="text-3xl font-bold gradient-text mb-2">3+</p>
+              <p className="text-3xl font-bold gradient-text mb-2">5+</p>
               <p className="text-gray-400">Years of Experience</p>
             </div>
             <div className="text-center border-l border-r border-slate-700">
