@@ -69,7 +69,7 @@ const About = () => {
             <h2 className="headtext__base text-4xl md:text-5xl">About Me</h2>
           </div>
           <p className="subtext max-w-3xl">
-            Full-stack developer with 3+ years of professional experience building and deploying production web applications. 
+            Full-stack developer with 5+ years of professional experience building and deploying production web applications. 
             I specialize in <span className="text-blue-400 font-semibold">React.js</span>, <span className="text-green-400 font-semibold">Node.js</span>, and 
             <span className="text-blue-500 font-semibold"> Microsoft Azure</span>, with hands-on expertise in scalable architectures and cloud solutions.
           </p>
@@ -86,7 +86,7 @@ const About = () => {
               <p className="text-gray-300">📍 <span className="text-white font-semibold">Landshut, Germany</span></p>
             </div>
             <div className="card">
-              <p className="text-gray-300">💼 <span className="text-white font-semibold">3+ Years Experience</span></p>
+              <p className="text-gray-300">💼 <span className="text-white font-semibold">5+ Years Experience</span></p>
             </div>
             <div className="card">
               <p className="text-gray-300">🎓 <span className="text-white font-semibold">M.Sc. Computer Science</span></p>

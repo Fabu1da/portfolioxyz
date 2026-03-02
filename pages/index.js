@@ -14,6 +14,7 @@ import { ArrowRight, Cloud } from "lucide-react";
 import Technology from "./components/technology/technology";
 import About from "./components/aboutme/about";
 import Achievement from "./components/achivement/achievement";
+import Image from "next/image";
 
 export default function Home() {
   const handleDownload = () => {
@@ -39,10 +40,12 @@ export default function Home() {
               <div className="relative w-72 h-96 group">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-orange-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition duration-500"></div>
                 <div className="relative rounded-3xl overflow-hidden border-2 border-blue-500/30 hover-glow">
-                  <img
+                  <Image
                     src="/1.jpg"
                     alt="Fabien Kavuganyi"
                     className="w-full h-full object-cover hover:scale-110 transition duration-500"
+                    width={300}
+                    height={400}
                   />
                 </div>
               </div>
@@ -70,7 +73,7 @@ export default function Home() {
               {/* Description */}
               <p className="text-lg text-gray-300 mb-8 leading-relaxed border-l-4 border-blue-500 pl-6">
                 Building exceptional web applications with <span className="text-blue-400 font-semibold">modern technologies</span>. 
-                3+ years of experience in React.js, Node.js, and cloud solutions. 
+                5+ years of experience in React.js, Node.js, and cloud solutions. 
                 Passionate about clean code and scalable architecture.
               </p>
 
